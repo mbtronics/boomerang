@@ -8249,8 +8249,6 @@ Source: www.kingbright.com</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="VDD" device="" value="VDD"/>
-<part name="SUPPLY1" library="supply2" deviceset="VDD" device=""/>
-<part name="SUPPLY3" library="supply2" deviceset="VDD" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="VDD" device="" value="VDD"/>
 <part name="SUPPLY5" library="supply2" deviceset="VDD" device="" value="VDD"/>
 <part name="U1" library="Texas Instruments_By_element14_Batch_1" deviceset="TLC5925IDWR" device=""/>
@@ -8305,8 +8303,6 @@ Source: www.kingbright.com</description>
 <instance part="GND4" gate="1" x="-7.62" y="15.24" rot="MR0"/>
 <instance part="GND5" gate="1" x="33.02" y="15.24" rot="MR0"/>
 <instance part="SUPPLY2" gate="G$1" x="-48.26" y="132.08" smashed="yes"/>
-<instance part="SUPPLY1" gate="G$1" x="-27.94" y="132.08" smashed="yes"/>
-<instance part="SUPPLY3" gate="G$1" x="12.7" y="132.08" smashed="yes"/>
 <instance part="SUPPLY4" gate="G$1" x="-7.62" y="132.08" smashed="yes"/>
 <instance part="SUPPLY5" gate="G$1" x="33.02" y="132.08" smashed="yes"/>
 <instance part="U1" gate="A" x="88.9" y="101.6"/>
@@ -9812,36 +9808,6 @@ Source: www.kingbright.com</description>
 <label x="169.926" y="59.436" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+5V" class="0">
-<segment>
-<pinref part="SV3" gate="G$1" pin="2"/>
-<wire x1="-35.56" y1="119.38" x2="-38.1" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="119.38" x2="-38.1" y2="127" width="0.1524" layer="91"/>
-<pinref part="SV3" gate="G$1" pin="1"/>
-<wire x1="-20.32" y1="119.38" x2="-17.78" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="119.38" x2="-17.78" y2="127" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="127" x2="-27.94" y2="127" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="G$1" pin="VDD"/>
-<wire x1="-27.94" y1="127" x2="-38.1" y2="127" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="127" x2="-27.94" y2="129.54" width="0.1524" layer="91"/>
-<label x="-30.48" y="134.62" size="1.778" layer="95"/>
-<junction x="-27.94" y="127"/>
-</segment>
-<segment>
-<wire x1="22.86" y1="119.38" x2="22.86" y2="127" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="119.38" x2="22.86" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="SV2" gate="G$1" pin="1"/>
-<pinref part="SV2" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="119.38" x2="2.54" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="119.38" x2="2.54" y2="127" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="127" x2="12.7" y2="127" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="G$1" pin="VDD"/>
-<wire x1="12.7" y1="127" x2="22.86" y2="127" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="129.54" x2="12.7" y2="127" width="0.1524" layer="91"/>
-<junction x="12.7" y="127"/>
-<label x="10.16" y="134.62" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="~OUT0"/>
@@ -10017,6 +9983,184 @@ Source: www.kingbright.com</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,-48.26,129.54,VDD,+3V3,,,,"/>
+<approved hash="102,1,-7.62,129.54,VDD,+3V3,,,,"/>
+<approved hash="102,1,33.02,129.54,VDD,+3V3,,,,"/>
+<approved hash="102,1,60.96,121.92,VDD,+3V3,,,,"/>
+<approved hash="102,1,167.64,121.92,VDD,+3V3,,,,"/>
+<approved hash="102,1,246.38,124.46,VDD,+3V3,,,,"/>
+<approved hash="102,1,167.64,55.88,VDD,+3V3,,,,"/>
+<approved hash="104,1,71.12,116.84,U1,VDD,+3V3,,,"/>
+<approved hash="104,1,261.62,104.14,IC1,VCC,+3V3,,,"/>
+<approved hash="106,1,20.32,116.84,P8,,,,,"/>
+<approved hash="106,1,-35.56,111.76,P13,,,,,"/>
+<approved hash="106,1,5.08,111.76,P14,,,,,"/>
+<approved hash="106,1,-20.32,111.76,P15,,,,,"/>
+<approved hash="106,1,20.32,111.76,P16,,,,,"/>
+<approved hash="106,1,-35.56,109.22,P17,,,,,"/>
+<approved hash="106,1,-20.32,109.22,P19,,,,,"/>
+<approved hash="106,1,20.32,109.22,P20,,,,,"/>
+<approved hash="106,1,-35.56,106.68,P21,,,,,"/>
+<approved hash="106,1,5.08,106.68,P22,,,,,"/>
+<approved hash="106,1,-20.32,106.68,P23,,,,,"/>
+<approved hash="106,1,20.32,106.68,P24,,,,,"/>
+<approved hash="106,1,-35.56,104.14,P25,,,,,"/>
+<approved hash="106,1,-20.32,104.14,P27,,,,,"/>
+<approved hash="106,1,20.32,104.14,P28,,,,,"/>
+<approved hash="106,1,-35.56,101.6,P29,,,,,"/>
+<approved hash="106,1,5.08,101.6,P30,,,,,"/>
+<approved hash="106,1,-20.32,101.6,P31,,,,,"/>
+<approved hash="106,1,-35.56,99.06,P33,,,,,"/>
+<approved hash="106,1,5.08,99.06,P34,,,,,"/>
+<approved hash="106,1,-20.32,99.06,P35,,,,,"/>
+<approved hash="106,1,20.32,99.06,P36,,,,,"/>
+<approved hash="106,1,-35.56,96.52,P37,,,,,"/>
+<approved hash="106,1,5.08,96.52,P38,,,,,"/>
+<approved hash="106,1,5.08,93.98,P42,,,,,"/>
+<approved hash="106,1,-20.32,93.98,P43,,,,,"/>
+<approved hash="106,1,20.32,93.98,P44,,,,,"/>
+<approved hash="106,1,-35.56,91.44,P45,,,,,"/>
+<approved hash="106,1,-20.32,91.44,P47,,,,,"/>
+<approved hash="106,1,-35.56,88.9,P49,,,,,"/>
+<approved hash="106,1,-20.32,88.9,P51,,,,,"/>
+<approved hash="106,1,20.32,88.9,P52,,,,,"/>
+<approved hash="106,1,-35.56,86.36,P53,,,,,"/>
+<approved hash="106,1,5.08,86.36,P54,,,,,"/>
+<approved hash="106,1,-20.32,86.36,P55,,,,,"/>
+<approved hash="106,1,20.32,86.36,P56,,,,,"/>
+<approved hash="106,1,-35.56,83.82,P57,,,,,"/>
+<approved hash="106,1,-20.32,83.82,P59,,,,,"/>
+<approved hash="106,1,20.32,83.82,P60,,,,,"/>
+<approved hash="106,1,-35.56,81.28,P61,,,,,"/>
+<approved hash="106,1,5.08,81.28,P62,,,,,"/>
+<approved hash="106,1,-20.32,81.28,P63,,,,,"/>
+<approved hash="106,1,20.32,81.28,P64,,,,,"/>
+<approved hash="106,1,-35.56,78.74,P65,,,,,"/>
+<approved hash="106,1,5.08,78.74,P66,,,,,"/>
+<approved hash="106,1,-20.32,78.74,P67,,,,,"/>
+<approved hash="106,1,20.32,78.74,P68,,,,,"/>
+<approved hash="106,1,-35.56,76.2,P69,,,,,"/>
+<approved hash="106,1,5.08,76.2,P70,,,,,"/>
+<approved hash="106,1,20.32,76.2,P72,,,,,"/>
+<approved hash="106,1,-35.56,73.66,P73,,,,,"/>
+<approved hash="106,1,5.08,73.66,P74,,,,,"/>
+<approved hash="106,1,-20.32,73.66,P75,,,,,"/>
+<approved hash="106,1,20.32,73.66,P76,,,,,"/>
+<approved hash="106,1,-35.56,68.58,P81,,,,,"/>
+<approved hash="106,1,-20.32,68.58,P83,,,,,"/>
+<approved hash="106,1,20.32,68.58,P84,,,,,"/>
+<approved hash="106,1,-35.56,66.04,P85,,,,,"/>
+<approved hash="106,1,5.08,66.04,P86,,,,,"/>
+<approved hash="106,1,-20.32,66.04,P87,,,,,"/>
+<approved hash="106,1,-35.56,63.5,P89,,,,,"/>
+<approved hash="106,1,5.08,63.5,P90,,,,,"/>
+<approved hash="106,1,-20.32,63.5,P91,,,,,"/>
+<approved hash="106,1,20.32,63.5,P92,,,,,"/>
+<approved hash="106,1,-35.56,60.96,P93,,,,,"/>
+<approved hash="106,1,-20.32,60.96,P95,,,,,"/>
+<approved hash="106,1,20.32,60.96,P96,,,,,"/>
+<approved hash="106,1,-35.56,58.42,P97,,,,,"/>
+<approved hash="106,1,5.08,58.42,P98,,,,,"/>
+<approved hash="106,1,-20.32,58.42,P99,,,,,"/>
+<approved hash="106,1,20.32,58.42,P100,,,,,"/>
+<approved hash="106,1,-35.56,55.88,P101,,,,,"/>
+<approved hash="106,1,-20.32,55.88,P103,,,,,"/>
+<approved hash="106,1,20.32,55.88,P104,,,,,"/>
+<approved hash="106,1,-35.56,53.34,P105,,,,,"/>
+<approved hash="106,1,5.08,53.34,P106,,,,,"/>
+<approved hash="106,1,-20.32,53.34,P107,,,,,"/>
+<approved hash="106,1,20.32,53.34,P108,,,,,"/>
+<approved hash="106,1,-35.56,50.8,P109,,,,,"/>
+<approved hash="106,1,5.08,50.8,P110,,,,,"/>
+<approved hash="106,1,20.32,50.8,P112,,,,,"/>
+<approved hash="106,1,-35.56,48.26,P113,,,,,"/>
+<approved hash="106,1,5.08,48.26,P114,,,,,"/>
+<approved hash="106,1,-20.32,48.26,P115,,,,,"/>
+<approved hash="106,1,-35.56,45.72,P117,,,,,"/>
+<approved hash="106,1,5.08,45.72,P118,,,,,"/>
+<approved hash="106,1,-20.32,45.72,P119,,,,,"/>
+<approved hash="106,1,20.32,45.72,P120,,,,,"/>
+<approved hash="106,1,-35.56,43.18,P121,,,,,"/>
+<approved hash="106,1,5.08,43.18,P122,,,,,"/>
+<approved hash="106,1,-20.32,43.18,P123,,,,,"/>
+<approved hash="106,1,20.32,43.18,P124,,,,,"/>
+<approved hash="106,1,-35.56,40.64,P125,,,,,"/>
+<approved hash="106,1,5.08,40.64,P126,,,,,"/>
+<approved hash="106,1,-20.32,40.64,P127,,,,,"/>
+<approved hash="106,1,20.32,40.64,P128,,,,,"/>
+<approved hash="106,1,5.08,38.1,P130,,,,,"/>
+<approved hash="106,1,-20.32,38.1,P131,,,,,"/>
+<approved hash="106,1,20.32,38.1,P132,,,,,"/>
+<approved hash="106,1,-35.56,35.56,P133,,,,,"/>
+<approved hash="106,1,5.08,35.56,P134,,,,,"/>
+<approved hash="106,1,-20.32,35.56,P135,,,,,"/>
+<approved hash="106,1,20.32,35.56,P136,,,,,"/>
+<approved hash="106,1,-35.56,33.02,P137,,,,,"/>
+<approved hash="106,1,5.08,33.02,P138,,,,,"/>
+<approved hash="106,1,-20.32,33.02,P139,,,,,"/>
+<approved hash="106,1,20.32,33.02,P140,,,,,"/>
+<approved hash="106,1,-35.56,30.48,P141,,,,,"/>
+<approved hash="106,1,-20.32,30.48,P143,,,,,"/>
+<approved hash="106,1,20.32,30.48,P144,,,,,"/>
+<approved hash="106,1,-35.56,27.94,P145,,,,,"/>
+<approved hash="106,1,5.08,27.94,P146,,,,,"/>
+<approved hash="106,1,20.32,27.94,P148,,,,,"/>
+<approved hash="106,1,-35.56,25.4,P149,,,,,"/>
+<approved hash="106,1,5.08,25.4,P150,,,,,"/>
+<approved hash="106,1,-20.32,25.4,P151,,,,,"/>
+<approved hash="106,1,20.32,25.4,P152,,,,,"/>
+<approved hash="106,1,-35.56,22.86,P153,,,,,"/>
+<approved hash="106,1,5.08,22.86,P154,,,,,"/>
+<approved hash="106,1,-20.32,22.86,P155,,,,,"/>
+<approved hash="106,1,20.32,22.86,P156,,,,,"/>
+<approved hash="106,1,-35.56,20.32,P157,,,,,"/>
+<approved hash="106,1,5.08,20.32,P158,,,,,"/>
+<approved hash="106,1,-20.32,20.32,P159,,,,,"/>
+<approved hash="106,1,-17.78,2.54,P161,,,,,"/>
+<approved hash="106,1,-2.54,-45.72,P162,,,,,"/>
+<approved hash="106,1,-2.54,2.54,P163,,,,,"/>
+<approved hash="106,1,-17.78,-45.72,P164,,,,,"/>
+<approved hash="106,1,-17.78,0,P165,,,,,"/>
+<approved hash="106,1,-2.54,-43.18,P166,,,,,"/>
+<approved hash="106,1,-2.54,0,P167,,,,,"/>
+<approved hash="106,1,-17.78,-43.18,P168,,,,,"/>
+<approved hash="106,1,-17.78,-2.54,P169,,,,,"/>
+<approved hash="106,1,-2.54,-40.64,P170,,,,,"/>
+<approved hash="106,1,-17.78,-40.64,P172,,,,,"/>
+<approved hash="106,1,-17.78,-5.08,P173,,,,,"/>
+<approved hash="106,1,-2.54,-38.1,P174,,,,,"/>
+<approved hash="106,1,-2.54,-5.08,P175,,,,,"/>
+<approved hash="106,1,-17.78,-38.1,P176,,,,,"/>
+<approved hash="106,1,-17.78,-7.62,P177,,,,,"/>
+<approved hash="106,1,-2.54,-35.56,P178,,,,,"/>
+<approved hash="106,1,-2.54,-7.62,P179,,,,,"/>
+<approved hash="106,1,-17.78,-35.56,P180,,,,,"/>
+<approved hash="106,1,-17.78,-10.16,P181,,,,,"/>
+<approved hash="106,1,-2.54,-33.02,P182,,,,,"/>
+<approved hash="106,1,-17.78,-33.02,P184,,,,,"/>
+<approved hash="106,1,-17.78,-12.7,P185,,,,,"/>
+<approved hash="106,1,-2.54,-30.48,P186,,,,,"/>
+<approved hash="106,1,-2.54,-12.7,P187,,,,,"/>
+<approved hash="106,1,-17.78,-30.48,P188,,,,,"/>
+<approved hash="106,1,-17.78,-15.24,P189,,,,,"/>
+<approved hash="106,1,-2.54,-27.94,P190,,,,,"/>
+<approved hash="106,1,-2.54,-15.24,P191,,,,,"/>
+<approved hash="106,1,-17.78,-27.94,P192,,,,,"/>
+<approved hash="106,1,-17.78,-17.78,P193,,,,,"/>
+<approved hash="106,1,-2.54,-25.4,P194,,,,,"/>
+<approved hash="106,1,-2.54,-17.78,P195,,,,,"/>
+<approved hash="106,1,-17.78,-25.4,P196,,,,,"/>
+<approved hash="106,1,-17.78,-20.32,P197,,,,,"/>
+<approved hash="106,1,-2.54,-22.86,P198,,,,,"/>
+<approved hash="106,1,-2.54,-20.32,P199,,,,,"/>
+<approved hash="115,1,-10.16,-23.0547,SV1,,,,,"/>
+<approved hash="115,1,12.7,68.3853,SV2,,,,,"/>
+<approved hash="115,1,-27.94,68.3853,SV3,,,,,"/>
+<approved hash="115,1,127.531,20.851,FRAME1,,,,,"/>
+<approved hash="115,1,175.556,31.8657,J1,,,,,"/>
+<approved hash="115,1,122.242,16.51,LED1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
