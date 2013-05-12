@@ -8273,6 +8273,7 @@ Source: www.kingbright.com</description>
 <part name="R5" library="rcl" deviceset="R-EU_" device="0207/10" value="330"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="0207/10" value="330R"/>
 <part name="D1" library="seb" deviceset="MBRS340" device="" value="1.5SMCJ33A"/>
+<part name="C2" library="capacitor-wima" deviceset="C" device="2.5/2" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -8333,6 +8334,7 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="144.5514" y="30.3784" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="149.8346" y="36.1442" size="1.778" layer="96"/>
 </instance>
+<instance part="C2" gate="G$1" x="274.32" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -9195,6 +9197,10 @@ Source: www.kingbright.com</description>
 <junction x="264.16" y="93.98"/>
 <junction x="264.16" y="88.9"/>
 <junction x="233.68" y="78.74"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="264.16" y1="78.74" x2="274.32" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="78.74" x2="274.32" y2="86.36" width="0.1524" layer="91"/>
+<junction x="264.16" y="78.74"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
@@ -9800,6 +9806,10 @@ Source: www.kingbright.com</description>
 <pinref part="IC1" gate="G$1" pin="VCC"/>
 <wire x1="264.16" y1="104.14" x2="261.62" y2="104.14" width="0.1524" layer="91"/>
 <junction x="233.68" y="121.92"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="264.16" y1="104.14" x2="274.32" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="104.14" x2="274.32" y2="93.98" width="0.1524" layer="91"/>
+<junction x="264.16" y="104.14"/>
 </segment>
 <segment>
 <pinref part="+3V4" gate="G$1" pin="VDD"/>
