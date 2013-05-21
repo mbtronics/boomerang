@@ -97,7 +97,7 @@
 <wire x1="101.27" y1="11.43" x2="101.27" y2="77.46" width="0" layer="20"/>
 <wire x1="101.27" y1="77.46" x2="-1.27" y2="77.46" width="0" layer="20"/>
 <wire x1="-1.27" y1="77.46" x2="-1.27" y2="11.43" width="0" layer="20"/>
-<text x="66.584321875" y="26.367740625" size="1.778" layer="1">Boomerang I/O Shield</text>
+<text x="67.79386875" y="25.76296875" size="1.778" layer="1">Boomerang I/O Shield</text>
 </plain>
 <libraries>
 <library name="boomerang">
