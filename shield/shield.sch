@@ -1551,24 +1551,24 @@ at 30/07/2012 17:45:58</description>
 <wire x1="-12.573" y1="8.509" x2="12.573" y2="8.509" width="0.1524" layer="21"/>
 <circle x="-1.778" y="-6.35" radius="0.381" width="0.762" layer="51"/>
 <circle x="10.922" y="-6.35" radius="0.381" width="0.762" layer="51"/>
-<pad name="1" x="-10.16" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-7.62" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-5.08" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-2.54" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="0" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="0" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="-2.54" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="-5.08" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="17" x="-7.62" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="18" x="-10.16" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="2.54" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="5.08" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="7.62" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="10.16" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="10.16" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="7.62" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="5.08" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="2.54" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-10.16" y="-7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R270"/>
+<pad name="2" x="-7.62" y="-7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R270"/>
+<pad name="3" x="-5.08" y="-7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R270"/>
+<pad name="4" x="-2.54" y="-7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R270"/>
+<pad name="5" x="0" y="-7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R270"/>
+<pad name="14" x="0" y="7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R90"/>
+<pad name="15" x="-2.54" y="7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R90"/>
+<pad name="16" x="-5.08" y="7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R90"/>
+<pad name="17" x="-7.62" y="7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R90"/>
+<pad name="18" x="-10.16" y="7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R90"/>
+<pad name="6" x="2.54" y="-7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R270"/>
+<pad name="7" x="5.08" y="-7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R270"/>
+<pad name="8" x="7.62" y="-7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R270"/>
+<pad name="9" x="10.16" y="-7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R270"/>
+<pad name="10" x="10.16" y="7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R90"/>
+<pad name="11" x="7.62" y="7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R90"/>
+<pad name="12" x="5.08" y="7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R90"/>
+<pad name="13" x="2.54" y="7.62" drill="0.8128" diameter="1.016" shape="offset" rot="R90"/>
 <text x="-12.573" y="8.9662" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-12.573" y="-10.2108" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
@@ -8244,7 +8244,6 @@ Source: www.kingbright.com</description>
 <part name="SV2" library="boomerang" deviceset="MA40-2" device=""/>
 <part name="SV3" library="boomerang" deviceset="MA40-2" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="U1" library="Texas Instruments_By_element14_Batch_1" deviceset="TLC5925IDWR" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="DIS2" library="display-hp" deviceset="HD-K121" device="" value="HDSP-521E"/>
@@ -8292,7 +8291,6 @@ Source: www.kingbright.com</description>
 <instance part="SV2" gate="G$1" x="12.7" y="45.72" rot="MR180"/>
 <instance part="SV3" gate="G$1" x="-27.94" y="45.72" rot="MR180"/>
 <instance part="GND4" gate="1" x="-7.62" y="15.24" rot="MR0"/>
-<instance part="GND5" gate="1" x="33.02" y="15.24" rot="MR0"/>
 <instance part="U1" gate="A" x="88.9" y="101.6"/>
 <instance part="GND6" gate="1" x="60.96" y="66.04" rot="MR0"/>
 <instance part="DIS2" gate="R" x="144.78" y="104.14" rot="MR90"/>
@@ -8658,6 +8656,11 @@ Source: www.kingbright.com</description>
 <label x="-2.54" y="73.66" size="1.778" layer="95"/>
 <pinref part="SV2" gate="G$1" pin="38"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="~OE"/>
+<wire x1="71.12" y1="104.14" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
+<label x="53.34" y="104.14" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="P78" class="0">
 <segment>
@@ -8913,11 +8916,6 @@ Source: www.kingbright.com</description>
 <label x="22.86" y="71.12" size="1.778" layer="95"/>
 <pinref part="SV2" gate="G$1" pin="39"/>
 </segment>
-<segment>
-<pinref part="U1" gate="A" pin="~OE"/>
-<wire x1="71.12" y1="104.14" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
-<label x="53.34" y="104.14" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="P76" class="0">
 <segment>
@@ -9077,10 +9075,6 @@ Source: www.kingbright.com</description>
 <wire x1="-7.62" y1="109.22" x2="-7.62" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-7.62" y="68.58"/>
 <junction x="-7.62" y="30.48"/>
-</segment>
-<segment>
-<pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="33.02" y1="101.6" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="GND"/>
@@ -9268,19 +9262,6 @@ Source: www.kingbright.com</description>
 <wire x1="-35.56" y1="71.12" x2="-43.18" y2="71.12" width="0.1524" layer="91"/>
 <label x="-43.18" y="71.12" size="1.778" layer="95"/>
 <pinref part="SV3" gate="G$1" pin="40"/>
-</segment>
-<segment>
-<pinref part="Q1" gate="1" pin="G"/>
-<wire x1="132.08" y1="27.94" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
-<label x="109.728" y="29.21" size="1.778" layer="95"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="27.94" x2="111.76" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="22.86" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="22.86" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
-<junction x="121.92" y="27.94"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="121.92" y1="22.86" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
-<junction x="121.92" y="22.86"/>
 </segment>
 </net>
 <net name="P81" class="0">
@@ -9552,6 +9533,19 @@ Source: www.kingbright.com</description>
 <wire x1="-12.7" y1="68.58" x2="-20.32" y2="68.58" width="0.1524" layer="91"/>
 <label x="-17.78" y="68.58" size="1.778" layer="95"/>
 <pinref part="SV3" gate="G$1" pin="41"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="1" pin="G"/>
+<wire x1="132.08" y1="27.94" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
+<label x="109.728" y="29.21" size="1.778" layer="95"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="27.94" x2="111.76" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="22.86" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="22.86" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
+<junction x="121.92" y="27.94"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="121.92" y1="22.86" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
+<junction x="121.92" y="22.86"/>
 </segment>
 </net>
 <net name="P75" class="0">
